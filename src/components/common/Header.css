@@ -1,0 +1,120 @@
+/* header.css */
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3));
+    margin: 0 auto;
+    z-index: 500;
+}
+
+#header .header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+    padding: 0 16px;
+}
+
+#header .logo {
+    width: 30px;
+    height: 30px;
+}
+
+#header .logo img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+#header .gnb{
+    display: none;
+}
+
+#header .mobile-icons {
+    display: flex;
+    gap: 12px;
+}
+
+#header .mobile-icons button {
+    border: 0;
+    font-size: 20px;
+    color: #929292;
+    background-color: transparent;
+}
+/*  */
+.Side {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    z-index: 800;
+    transition: width 1s;
+}
+
+.Side.view {
+    width: 100%;
+}
+
+.side-inner {
+    width: 1280px;
+}
+/*  */
+
+@media screen and (min-width:768px) {
+    #header .header_inner {
+        height: 54px;
+        padding: 0 28px;
+    }
+
+    /* #header .logo {
+        width: 160px;
+        height: 17px;
+    } */
+}
+
+@media screen and (min-width:1280px) {
+    #header {
+        height: 54px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    #header .header_inner {
+        position: relative;
+        width: 1440px;
+        height: 54px;
+        margin: 0 auto;
+        z-index: 1;
+    }
+
+    #header .mobile-icons {
+        display: none;
+    }
+
+    #header .header_left {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    #header .gnb {
+        display: block;
+    }
+
+    #header #HeadUtils {
+        display: flex;
+    }
+
+    #header .hover-bg {
+        position: absolute;
+        top: 55px;
+        left: 0;
+        width: 100%;
+        background-color: #ffffffb7;
+    }
+}

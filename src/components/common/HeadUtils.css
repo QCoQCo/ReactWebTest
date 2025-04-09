@@ -1,0 +1,14 @@
+#HeadUtils {
+    display: flex;
+    gap: 16px;
+}
+
+#HeadUtils a {
+    color: #ddd;
+}
+
+#HeadUtils .btn-search {
+    font-size: 16px;
+    color: #ddd;
+    cursor: pointer;
+}

@@ -1,0 +1,322 @@
+/* 공통설정 */
+
+.row_inner{
+    /* width: 1440px; */
+    margin: 0 auto;
+}
+
+
+/* RowOne */
+.RowOne{
+    margin-top: 54px;
+}
+.RowOne .row_inner{
+    position: relative;
+    width: 100%;
+}
+.RowOne .intro img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+}
+.RowOne .intro_text{
+    /* position: sticky; */
+    /* top: 60px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    align-items: center;
+    /* background-color: #fff; */
+}
+.RowOne .intro_text h1{
+    /* position: absolute;
+    top: 60px;
+    left: 0; */
+    position: sticky;
+    top: 60px;
+    font-size: 40px;
+    /* width: 100%; */
+    height: 100%;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #fff;
+}
+/* RowOne End */
+
+/* RowTwo */
+.RowTwo{
+    position: relative;
+    margin-top: 40px;
+}
+.RowTwo .row_inner{
+    width: 100%;
+}
+.RowTwo .row2-box{
+    width: 85%;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+.RowTwo .row2-box.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.RowTwo .row2-box:nth-child(1).visible {
+    transition-delay: 0.1s;
+}
+.RowTwo .row2-box:nth-child(2).visible {
+    transition-delay: 0.3s;
+}
+.RowTwo .row2-box:nth-child(3).visible {
+    transition-delay: 0.5s;
+}
+.RowTwo .row2-box:nth-child(4).visible {
+    transition-delay: 0.7s;
+}
+.RowTwo .row2-box > div{
+    height: 350px;
+    /* calc */
+    /* height: calc(100vh-50vh); */
+}
+.RowTwo .row2-box .rowImg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+.RowTwo .row2-box:hover .rowImg img {
+    transform: scale(1.05);
+}
+.RowTwo .row2-box .rowText{
+    position: relative;
+    text-align: center;
+}
+.RowTwo .row2-box .rowText p{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    font-size: 35px;
+    font-weight: 800;
+    color: #fff;
+    transform: translate(0,-50%);
+    transition: all 0.3s ease;
+}
+.RowTwo .row2-box:hover .rowText p {
+    transform: translate(0, -50%) scale(1.05);
+}
+
+/* RowTwo End */
+
+/* RowThree */
+.RowThree{
+    margin-top: 40px;
+}
+.RowThree .row_inner{
+    position: relative;
+}
+.RowThree .row_inner .content-box{
+    /* position: sticky;
+    top: 20px;
+    margin: 0; */
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    height: 80%;
+    transform: translate(-50%);
+    text-align: center;
+}
+.RowThree .row_inner .content-box .sticky-box{
+    position: sticky;
+    top: 10%;
+}
+.RowThree .row_inner .content-box .sticky-box h1{
+    font-size: 28px;
+    font-weight: 800;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.RowThree .row_inner .content-box .sticky-box h1.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+.RowThree .row_inner .content-box .sticky-box p {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.RowThree .row_inner .content-box .sticky-box p.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+.RowThree .row_inner .bg-img{
+    width: 100%;
+    overflow: hidden;
+}
+.RowThree .row_inner .bg-img img{
+    width: 400%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/* RowThree End */
+
+/* RowFour */
+.RowFour {
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.RowFour .fullscreen-image {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.RowFour .fullscreen-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.RowFour .content-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.RowFour .content-wrapper.visible {
+    opacity: 1;
+}
+
+.RowFour .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.RowFour .grid-item {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.RowFour .grid-item:hover {
+    transform: translateY(-10px);
+}
+
+.RowFour .image-box {
+    height: 200px;
+    overflow: hidden;
+}
+
+.RowFour .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.RowFour .grid-item:hover .image-box img {
+    transform: scale(1.1);
+}
+
+.RowFour .text-box {
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.RowFour .text-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.RowFour .text-box p {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+    .RowFour .grid-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .RowFour .content-wrapper {
+        width: 95%;
+    }
+    
+    .RowFour .text-box h3 {
+        font-size: 20px;
+    }
+    
+    .RowFour .text-box p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:780px){
+    /* RowOne */
+    .RowOne .intro_text h1{
+        font-size: 80px;
+    }
+
+    /* RowTwo */
+    .RowTwo .row2-box{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+    }
+    .RowTwo .row2-box:nth-child(even){
+        flex-direction: row-reverse;
+    }
+    .RowTwo .row2-box .rowImg{
+        width: 50%;
+    }
+    .RowTwo .row2-box .rowText{
+        box-sizing: border-box;
+        padding: 0 30px;
+        width: 50%;
+    }
+    .RowTwo .row2-box .rowText p{
+        font-size: 45px;
+    }
+
+    /* RowThree */
+    .RowThree .row_inner .content-box .sticky-box h1{
+        font-size: 40px;
+    }
+
+}
+
+@media screen and (min-width:1280px){
+    /* RowOne */
+    .RowOne .intro_text h1{
+        font-size: 110px;
+    }
+    
+    /* RowTwo */
+
+    .RowTwo .row2-box .rowText p{
+        font-size: 65px;
+    }
+}
