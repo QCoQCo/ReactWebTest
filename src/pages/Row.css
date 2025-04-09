@@ -142,25 +142,20 @@
     background-image: linear-gradient(#fff, #fff);
     -webkit-background-clip: text;
     background-repeat: no-repeat;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    background-size: 0% 100%;
+    opacity: 1;
+    transform: translateY(0);
+    transition: background-size 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .RowThree .row_inner .content-box .sticky-box h1{
-    /* -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
-    background-image: linear-gradient(#fff, #fff);
-    -webkit-background-clip: text; */
-    background-repeat: no-repeat;
     font-size: 28px;
     font-weight: 800;
-    /* color: transparent; */
-
 }
+
 .RowThree .row_inner .content-box .sticky-box h1.fade-in,
 .RowThree .row_inner .content-box .sticky-box p.fade-in {
-    opacity: 1;
-    transform: translateY(0);
+    background-size: 100% 100%;
 }
 
 .RowThree .row_inner .bg-img{
