@@ -2,6 +2,7 @@ import { useRef, useState, useEffect } from 'react';
 import { useWindowScrollEvent, checkIsInViewport } from '../components/ect';
 import './Row.css';
 
+
 const RowFour = () => {
     const [isVisible, setIsVisible] = useState(false);
     const contentRef = useRef(null);
@@ -31,7 +32,7 @@ const RowFour = () => {
                                 <img src="/assets/images/cpu-1.jpg" alt="CPU" />
                             </div>
                             <div className="text-box">
-                                <h3>The hottest powerup for you</h3>
+                                <h3>The Hottest Powerup For You</h3>
                                 <p>Experience lightning-fast processing</p>
                             </div>
                         </div>
@@ -49,7 +50,7 @@ const RowFour = () => {
                                 <img src="/assets/images/sound-card-1.jpg" alt="Sound Card" />
                             </div>
                             <div className="text-box">
-                                <h3>Take Your Audio Experience to the Next Level</h3>
+                                <h3>Take Your Audio Experience To The Next Level</h3>
                                 <p>Feel every beat with crystal clear sound</p>
                             </div>
                         </div>

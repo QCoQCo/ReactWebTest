@@ -21,7 +21,6 @@ const RowTwo = () => {
             });
             setVisibleBoxes(newVisibleBoxes);
         };
-
         window.addEventListener('scroll', handleScroll);
         handleScroll();
         return () => window.removeEventListener('scroll', handleScroll);

@@ -2,12 +2,12 @@ import { Link } from 'react-router-dom';
 import './Gnb.css';
 
 const Gnb=({setHoverHeight})=>{
+
     const handleD1MouseHover=(e)=>{
         // const depth2El=e.currentTarget.quarySelector('.depth2');
         const depth2El=e.currentTarget.querySelector('.depth2');
         // const height=depth2El.getBoundingClientRect().height;
         const height=depth2El.getBoundingClientRect().height;
-
         setHoverHeight(height);
     };
 

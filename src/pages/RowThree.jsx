@@ -24,7 +24,7 @@ const RowThree = () => {
                     }
                     
                     // 문단이 나타날 위치 (제목보다 더 아래)
-                    if (tagetOffsetTop <= windowHeight * 0.5) {
+                    if (tagetOffsetTop <= windowHeight * 0.3) {
                         setShowParagraph(true);
                     }
                 } else {

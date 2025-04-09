@@ -90,9 +90,9 @@
     overflow: hidden;
     transition: transform 0.5s ease;
 }
-.RowTwo .row2-box:hover .rowImg img {
+/* .RowTwo .row2-box:hover .rowImg img {
     transform: scale(1.05);
-}
+} */
 .RowTwo .row2-box .rowText{
     position: relative;
     text-align: center;
@@ -135,26 +135,24 @@
     position: sticky;
     top: 10%;
 }
+
+.RowThree .row_inner .content-box .sticky-box h1,
+.RowThree .row_inner .content-box .sticky-box p{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .RowThree .row_inner .content-box .sticky-box h1{
     font-size: 28px;
     font-weight: 800;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.RowThree .row_inner .content-box .sticky-box h1.fade-in {
-    opacity: 1;
-    transform: translateY(0);
-}
-.RowThree .row_inner .content-box .sticky-box p {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-}
+.RowThree .row_inner .content-box .sticky-box h1.fade-in,
 .RowThree .row_inner .content-box .sticky-box p.fade-in {
     opacity: 1;
     transform: translateY(0);
 }
+
 .RowThree .row_inner .bg-img{
     width: 100%;
     overflow: hidden;
@@ -165,8 +163,8 @@
     object-fit: cover;
 }
 
-
 /* RowThree End */
+
 
 /* RowFour */
 .RowFour {
@@ -254,6 +252,9 @@
     font-size: 16px;
     opacity: 0.8;
 }
+
+/* RowFour End*/
+
 
 @media screen and (max-width: 768px) {
     .RowFour .grid-container {
