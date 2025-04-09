@@ -138,14 +138,24 @@
 
 .RowThree .row_inner .content-box .sticky-box h1,
 .RowThree .row_inner .content-box .sticky-box p{
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
+    background-image: linear-gradient(#fff, #fff);
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .RowThree .row_inner .content-box .sticky-box h1{
+    /* -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
+    background-image: linear-gradient(#fff, #fff);
+    -webkit-background-clip: text; */
+    background-repeat: no-repeat;
     font-size: 28px;
     font-weight: 800;
+    /* color: transparent; */
+
 }
 .RowThree .row_inner .content-box .sticky-box h1.fade-in,
 .RowThree .row_inner .content-box .sticky-box p.fade-in {
@@ -192,7 +202,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
+    width: 95%;
     opacity: 0;
     transition: opacity 0.8s ease-in-out;
 }
@@ -203,7 +213,7 @@
 
 .RowFour .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 20px;
     padding: 20px;
 }
@@ -243,22 +253,33 @@
 }
 
 .RowFour .text-box h3 {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 10px;
     font-weight: 600;
 }
 
 .RowFour .text-box p {
-    font-size: 16px;
+    font-size: 14px;
     opacity: 0.8;
 }
 
 /* RowFour End*/
 
 
-@media screen and (max-width: 768px) {
-
-}
+/* @media screen and (max-width: 768px) {
+    .RowFour .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .RowFour .content-wrapper {
+        width: 95%;
+    }
+    .RowFour .text-box h3 {
+        font-size: 20px;
+    }
+    .RowFour .text-box p {
+        font-size: 14px;
+    }
+} */
 
 @media screen and (min-width:780px){
     /* RowOne */
@@ -295,21 +316,17 @@
     }
 
     /* RowFour */
-
-    .RowFour .grid-container {
-        grid-template-columns: 1fr;
+    .RowFour .grid-container{
+        grid-template-columns: repeat(3, 1fr);
     }
-    
     .RowFour .content-wrapper {
-        width: 95%;
+        width: 90%;
     }
-    
     .RowFour .text-box h3 {
-        font-size: 20px;
+        font-size: 24px;
     }
-    
-    .RowFour .text-box p {
-        font-size: 14px;
+    .RowFour .text-box p{
+        font-size: 16px;
     }
 
 }

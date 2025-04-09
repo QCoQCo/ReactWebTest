@@ -17,12 +17,10 @@ const RowThree = () => {
                 // 섹션이 화면에 보이기 시작할 때
                 if (tagetOffsetTop <= windowHeight * 0.8) {
                     setIsScroll(true);
-                    
                     // 제목이 나타날 위치
                     if (tagetOffsetTop <= windowHeight * 0.7) {
                         setShowTitle(true);
                     }
-                    
                     // 문단이 나타날 위치 (제목보다 더 아래)
                     if (tagetOffsetTop <= windowHeight * 0.3) {
                         setShowParagraph(true);
@@ -34,7 +32,6 @@ const RowThree = () => {
                 }
             }
         };
-
         window.addEventListener("scroll", handleScroll);
         handleScroll();
         return () => window.removeEventListener("scroll", handleScroll);
