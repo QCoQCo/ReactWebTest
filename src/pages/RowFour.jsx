@@ -2,7 +2,6 @@ import { useRef, useState, useEffect } from 'react';
 import { useWindowScrollEvent, checkIsInViewport } from '../components/ect';
 import './Row.css';
 
-
 const RowFour = () => {
     const [isVisible, setIsVisible] = useState(false);
     const contentRef = useRef(null);
