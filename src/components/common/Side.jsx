@@ -1,10 +1,25 @@
+import { useRef,useEffect } from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark, faHome, faUser, faCartShopping } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
 import './Side.css';
 
 
 const Side = ({ isSide, handleSideOpen }) => {
+    // const sideRef=useRef(null);
+
+    // useEffect(()=>{
+        
+    //     const windowWidth=window.innerWidth;
+    //     // if(isSide&&windowWidth>=1280)handleSideOpen();
+        
+    //     if(sideRef.current){
+    //         const windowWidth=window.innerWidth;
+    //         if(windowWidth>=1280)handleSideOpen();
+    //     }
+
+    //     console.log(windowWidth)
+    // });
     return (
         <div className={`Side ${isSide ? 'view' : ''}`}>
             <div className="side-inner">

@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3));
     z-index: 500;
 }
@@ -15,7 +15,7 @@
     align-items: center;
     height: 54px;
     margin: 0 auto;
-    /* padding: 0 20px; */
+    padding: 0 20px;
 }
 
 #header .logo {
@@ -59,7 +59,7 @@
 
 /*  */
 
-@media screen and (min-width:780px) {
+@media screen and (min-width:768px) {
     #header {
         height: 54px;
         border-bottom: 1px solid #ddd;
@@ -83,12 +83,7 @@
     #header .gnb {
         display: block;
     }
-    #header .mobile-icons {
-        display: none;
-    }
-    #header #HeadUtils {
-        display: flex;
-    }
+
     #header .hover-bg {
         position: absolute;
         top: 55px;
@@ -112,7 +107,12 @@
     }
 
 
-
+    #header .mobile-icons {
+        display: none;
+    }
+    #header #HeadUtils {
+        display: flex;
+    }
 
 
 }

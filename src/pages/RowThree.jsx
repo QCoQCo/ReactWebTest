@@ -20,14 +20,15 @@ const RowThree = () => {
                     setIsScroll(true);
                     
                     // 배경 이미지 크기 계산
-                    const progress = Math.min(
-                        Math.max(
-                            // (windowHeight - tagetOffsetTop) / (elementHeight * 0.6),
-                            (windowHeight - tagetOffsetTop) / (elementHeight),
-                            0
-                        ),
-                        1
-                    );
+                    // const progress = Math.min(
+                    //     Math.max(
+                    //         // (windowHeight - tagetOffsetTop) / (elementHeight * 0.6),
+                    //         (windowHeight - tagetOffsetTop) / (elementHeight),
+                    //         0
+                    //     ),
+                    //     1
+                    // );
+                    const progress=((windowHeight - tagetOffsetTop) / (elementHeight));
                     // console.log(progress);
                     setBackgroundSize(progress * 100);
                     // if (progress <= 0.3) {
@@ -39,13 +40,13 @@ const RowThree = () => {
                     // }
 
                     // 제목이 나타날 위치
-                    setShowTitle(true);
-                    // if (tagetOffsetTop <= windowHeight * 0.7) {
-                    // }
+                    if (tagetOffsetTop <= windowHeight * 0.7) {
+                        setShowTitle(true);
+                    }
                     // 문단이 나타날 위치 (제목보다 더 아래)
-                    setShowParagraph(true);
-                    // if (tagetOffsetTop <= windowHeight * 0.3) {
-                    // }
+                    if (tagetOffsetTop <= windowHeight * 0.3) {
+                        setShowParagraph(true);
+                    }
                 } else {
                     setIsScroll(false);
                     setShowTitle(false);

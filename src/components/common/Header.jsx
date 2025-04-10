@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState,useEffect,useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Gnb from './Gnb';
 import HeadUtils from './HeadUtils';
@@ -12,11 +12,39 @@ const Header=()=>{
     const[hoverHeight,setHoverHeight]=useState(null);
     // const[hoverHeigh,setHoverHeigh]=useState(0);
     const [isSide, setIsSide] = useState(false);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+    const headerRef=useRef(null);
+
 
     const handleSideOpen = () => {
         setIsSide(!isSide);
-    }
+    };
 
+    // useEffect(()=>{
+    //     const calcWidth=()=>{
+    //         if(headerRef.current){
+    //             const currentWidth=headerRef.current.offsetWidth;
+    //             if(isSide&&currentWidth>=1280)handleSideOpen();
+    //             console.log(currentWidth)
+    //         }
+    //     }
+    //     window.addEventListener('width-change',calcWidth);
+    //     calcWidth();
+    //     return ()=> window.removeEventListener('width-change',calcWidth);
+    // },[]);
+    const handleResize = () => {
+      if(window.innerWidth>=1280)setIsSide(false);
+
+    }
+    useEffect(() => {
+      window.addEventListener('resize', handleResize)
+      // 컴포넌트 언마운트 시 이벤트 리스너 삭제
+      return () => {
+        window.removeEventListener('resize', handleResize)
+      }
+    }, [])
+    // console.log(windowWidth)
     
     return(
         <header id="header">

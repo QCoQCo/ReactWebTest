@@ -160,3 +160,19 @@
 .side-utills ul li a:hover {
     color: #f79cff;
 }
+
+@media screen and (min-width:768px) {
+    .Side.view {
+        width: 600px;
+    }
+    .side-inner {
+        width: 600px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+}
+@media screen and (min-width:1280px) {
+    .Side{
+        display: none;
+    }
+}
