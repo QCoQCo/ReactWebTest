@@ -14,6 +14,7 @@
     position: relative;
     width: 100%;
 }
+
 .RowOne .intro img{
     width: 100%;
     height: auto;
@@ -53,7 +54,7 @@
     margin-top: 40px;
 }
 .RowTwo .row_inner{
-    width: 100%;
+    width: 95%;
 }
 .RowTwo .row2-box{
     width: 85%;
@@ -162,6 +163,7 @@
     width: 100%;
     overflow: hidden;
 }
+
 .RowThree .row_inner .bg-img img{
     width: 400%;
     height: auto;

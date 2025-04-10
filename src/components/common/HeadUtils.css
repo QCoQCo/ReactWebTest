@@ -1,6 +1,7 @@
 #HeadUtils {
     display: flex;
     gap: 16px;
+    /* margin-right: 25px; */
 }
 
 #HeadUtils a {

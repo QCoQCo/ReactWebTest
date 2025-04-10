@@ -1,5 +1,4 @@
 import { useRef, useState, useEffect } from 'react';
-import { useWindowScrollEvent, checkIsInViewport } from '../components/ect';
 import './Row.css';
 
 const RowThree = () => {
@@ -84,8 +83,18 @@ const RowThree = () => {
                             style={{ backgroundSize: `${backgroundSize}% 100%` }}
                         >
                             Our products are designed from the ground up to be as open
-                            <br/>and transparent as possible,
-                            <br/>supporting a free and open source software from the start.
+                        </p>
+                        <p 
+                            className={`${isScroll ? 'animating' : ''} ${showParagraph ? 'fade-in' : ''}`}
+                            style={{ backgroundSize: `${backgroundSize}% 100%` }}
+                        >
+                            and transparent as possible,
+                        </p>
+                        <p 
+                            className={`${isScroll ? 'animating' : ''} ${showParagraph ? 'fade-in' : ''}`}
+                            style={{ backgroundSize: `${backgroundSize}% 100%` }}
+                        >
+                            supporting a free and open source software from the start.
                         </p>
                     </div>
                 </div>
