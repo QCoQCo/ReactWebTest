@@ -8,9 +8,7 @@ const RowFour = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (contentRef.current) {
-                setIsVisible(checkIsInViewport(contentRef.current));
-            }
+            if (contentRef.current)setIsVisible(checkIsInViewport(contentRef.current));
         };
 
         window.addEventListener('scroll', handleScroll);

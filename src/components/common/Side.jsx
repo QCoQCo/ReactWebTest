@@ -1,4 +1,3 @@
-import { useRef,useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark, faHome, faUser, faCartShopping } from "@fortawesome/free-solid-svg-icons";

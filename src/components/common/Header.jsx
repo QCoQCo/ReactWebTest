@@ -1,4 +1,4 @@
-import { useState,useEffect,useRef } from 'react';
+import { useState,useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Gnb from './Gnb';
 import HeadUtils from './HeadUtils';
@@ -12,9 +12,9 @@ const Header=()=>{
     const[hoverHeight,setHoverHeight]=useState(null);
     // const[hoverHeigh,setHoverHeigh]=useState(0);
     const [isSide, setIsSide] = useState(false);
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+    // const [windowWidth, setWindowWidth] = useState(window.innerWidth)
 
-    const headerRef=useRef(null);
+    // const headerRef=useRef(null);
 
 
     const handleSideOpen = () => {
